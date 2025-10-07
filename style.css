@@ -1,0 +1,64 @@
+ body {
+            margin: 0;
+            padding: 0;
+            background: #9daccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+        }
+        .container input {
+            padding: 10px 40px 10px 20px;
+            font-size: 16px;
+            width: 0px;
+            border-radius: 50px;
+            border: 1px solid white;
+            outline: none;
+            box-sizing: border-box;
+            color: black;
+            height: 60px; 
+            transition: all .7s ease;
+            overflow: hidden;
+        }
+        ::placeholder {
+            color: grey;
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 50%;                 
+            transform: translateY(-50%); 
+            height: 60px;              
+            width: 60px;               
+            background: #485f88;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            transition: all .7s ease;
+        }
+        .btn i {
+            font-size: 25px;
+            color: white;
+        }
+        .container:hover input {
+            width: 350px;
+        }
+        .container:hover i {
+            transform: rotate(-350deg);
+        }
+        .author {
+          position: fixed;   
+          bottom: 10px; 
+          left: 50%;                
+          transform: translateX(-50%); 
+          font-size: 0.9rem;
+          color: rgba(255,255,255,0.7);
+          font-family: sans-serif;
+        } 
